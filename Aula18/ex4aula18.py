@@ -26,7 +26,5 @@ dados = cerveja[1:]
 
 
 for daddos_cerveja in dados:
-    print(f"{cabe[0]} - {daddos_cerveja[0]}")
-    print(f"{cabe[1]} - {daddos_cerveja[1]}")
-    print(f"{cabe[2]} - {daddos_cerveja[2]}")
-    print(f"{cabe[3]} - {daddos_cerveja[3]}")
+    for i in range (4):
+        print(f"{cabe[i]} - {daddos_cerveja[i]}")
