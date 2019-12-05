@@ -17,49 +17,49 @@ lista = [['frutas','verduras','legumes','preço'],
 # da seguinte forma: "O preço do {} é R$ {}"
 
 print('1: imprima o valor do abacaxi')
-print(f'{lista[1][1]}''\n')#o primeiro colchete aponta para qual lista o segundo colchetes aponta qual elemento da lista apontada eu quero
+print(f'{lista[1][1]} Seu valor é de: {lista[4][0][0]}''\n')#o primeiro colchete aponta para qual lista o segundo colchetes aponta qual elemento da lista apontada eu quero
 
 print('2: imprima o valor da rucula')
-print(f'{lista[2][2]}''\n')
+print(f'{lista[2][2]} Seu valor é de: {lista[4][0][1]} ''\n')
 
 print('3: imprima o valor da laranja')
-print(f'{lista[1][2]}''\n')
+print(f'{lista[1][2]} Seu valor é de:{lista[4][0][2]}' '\n')
 
 print('4: imprima o valor do repolho')
-print(f'{lista[2][5]}''\n')
+print(f'{lista[2][5]} Seu valor é de: {lista[4][1][0]}''\n')
 
 print('5: imprima o valor do feijão')
-print(f'{lista[3][0]}''\n')
+print(f'{lista[3][0]} Seu valor é de {lista[4][0][3]}''\n')
 
 print('6: imprima o valor do feijão branco')
-print(f'{lista[3][4]}''\n')
+print(f'{lista[3][4]} Seu valor é de: {lista[4][0][4]}''\n')
 
 print('7: imprima o valor da vergamota')
-print(f'{lista[1][6]}''\n')
+print(f'{lista[1][6]} Seu valor é de: {lista[4][0][5]}''\n')
 
 print('8: imprima o valor da alface lisa')
-print(f'{lista[2][1]}''\n')
+print(f'{lista[2][1]} Seu valor é de: {lista[4][1][1]}''\n')
 
 print('9: imprima o valor do mamão')
-print(f'{lista[1][0]}''\n')
+print(f'{lista[1][0]} Seu valor é de: {lista[4][1][2]}''\n')
 
 print('10: imprima o valor da soja')
-print(f'{lista[3][6]}''\n')
+print(f'{lista[3][6]} Seu valor é de: {lista[4][1][3]}''\n')
 
 print('11: imprima o valor da lentilha')
-print(f'{lista[3][2]}''\n')
+print(f'{lista[3][2]} Seuvaloré de: {lista[4][1][4]}''\n')
 
 print('12: imprima o valor da uva')
-print(f'{lista[1][3]}''\n')
+print(f'{lista[1][3]} Seu valor é de: {lista[4][1][5]}''\n')
 
 print('13: imprima o valor da vagem')
-print(f'{lista[3][3]}''\n')
+print(f'{lista[3][3]} Seu valor é de: {lista[4][1][6]}''\n')
 
 print('14: imprima o valor do almeirão')
-print(f'{lista[2][3]}''\n')
+print(f'{lista[2][3]} Seu valor é de: {lista[4][2][0]}''\n')
 
 print('15: imprima o valor da ervilha')
-print(f'{lista[3][1]}''\n')
+print(f'{lista[3][1]} Seu valor é de: {lista[4][2][1]}''\n')
 
 print('16: imprima o valor da maçã')
-print(f'{lista[1][5]}')
+print(f'{lista[1][5]} Seu valor é de: {lista[4][2][2]}')

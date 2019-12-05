@@ -14,7 +14,10 @@ cadastroHBSIS = ['nome',   ['Alex'   ,'Paulo'  ,'Pedro'  ,'Mateus' ,'Carlos' ,'J
 # idade Carlos é 15 anos
 # email de Mateus é d@d.com
 
-print(f'{cadastroHBSIS[0]} {cadastroHBSIS[1][0]} : {cadastroHBSIS[3][0]}')
+
+
+#mostrando os dados como pedido a cima
+print(f'{cadastroHBSIS[0]} {cadastroHBSIS[1][0]} : {cadastroHBSIS[3][0]} \n')
 
 
 for i in cadastroHBSIS:
