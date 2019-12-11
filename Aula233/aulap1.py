@@ -36,6 +36,6 @@ for chave, valor in dias_de_cada_mes.items():
     print('Para a chave', chave, 'O valor', valor)
 
 # tupla = ('texto', 42, 5.01, int, str, list)#tupla composta varios tipo de dados
-tupla = ('texto', 'texto de novo', 'tesstooo')
+tupla = ('texto', 'texto de novo', 'tesstooo')#lista omogenea lista com um único tipo de dado
 for isto in tupla:
     print(type(isto))
