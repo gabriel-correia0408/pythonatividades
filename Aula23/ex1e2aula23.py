@@ -47,14 +47,22 @@ class Cliente:#criando a classe
         arquivo_cliente.write(daddostotal)#fazendo a leitura do arquivo txt, que está salvo na variável 'arquivo_clienetes'
         arquivo_cliente.close()#fechando o arquivo para que possa ser executado
 
+    def atualizar(self):
+        self.nome = input('Digite  o nome do cliente: ')
+        self.idade = int(input('Digite a nnova idadde do cliente: '))
+        self.sexo = input('Digigte o sexo do cliente: ')
+        self.email = input('Digite o email do cliente: ')
+        self.telefone = input('Digite o telefone do cliente: ')
+        
+
 
 
 
 cliente = Cliente(dadobruto)
 cliente.listar()
-cliente.salvar(dadobruto)
+cliente.salvar(dadobruto)#atribuindo a classe o parametro que vou ela vai receber, para o metodoto 'salvar' receber esses dados
 
-print(f'{cliente.nome}, {cliente.idade}, {cliente.sexo}, {cliente.email}, {cliente.telefone} ')
+print(f'{cliente.nome}, {cliente.idade}, {cliente.sexo}, {cliente.email}, {cliente.telefone} ')#printando os dados 
         
 
         
