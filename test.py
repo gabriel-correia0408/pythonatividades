@@ -16,3 +16,10 @@ resultado = 'Reprovado'
 if media >=7:
     resultado = 'Aprovado'
 print(f'Aluno: {nome[0]}- média={media}- Resultado: {resultado}')
+
+
+#arrumar este programa para que mostre o resultad dos três alunos
+#na tela.
+
+
+# while para que serve e como usar ele 

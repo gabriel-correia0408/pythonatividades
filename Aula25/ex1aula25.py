@@ -61,7 +61,7 @@ class Cliente:
         Se o cliente_devedor estiver True, o crédito pode ser diminuido porem não aumentado.
         
         '''
-        
+        for valor 
         pass
 
     def dinheiro(self,valor):
