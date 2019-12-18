@@ -27,6 +27,14 @@ from geradorlista import binario
 # >>> lista
 # [1, 2, 3, 4, 5, 6]
 
+
+
+
+
+
+
+
+
 lista1 = [lista_simples_int() ,lista_simples_int(), lista_simples_int()]
 
 
@@ -50,6 +58,25 @@ lista_cadastros = [['1', 'Arnaldo', '23', 'm', 'alexcabeludo2@hotmail.com', '014
 
 
 # 4) Crie uma função que solicite 5 nomes e retorne uma lista com todos eles
+
+
+
+
+def nome ():
+    lista_nome = []
+    for i in range(5):
+        nomes = inappend(nomes)
+    return lista_retput('Digite um nome: ')
+        lista_nome.append(nomes)
+
+print(nome())
+Nomes = nome()
+
+
+
+
+
+
 
 
 
@@ -196,61 +223,61 @@ listabin = binario()
 # >>> lista_soma    = [46,4, 4, 46]
 
 # 18.1) lista1
- lista1 = lista_simples_int(8)
+#  lista1 = lista_simples_int(8)
 
-# 18.2) lista2
- lista2 = lista_simples_int(8)
+# # 18.2) lista2
+#  lista2 = lista_simples_int(8)
 
-# 18.3) lista3
- lista3 = lista_simples_int(8)
+# # 18.3) lista3
+#  lista3 = lista_simples_int(8)
 
-# 18.4) lista4
- lista4 = lista_simples_int(8)
+# # 18.4) lista4
+#  lista4 = lista_simples_int(8)
 
-# 18.5) lista5
- lista5 = lista_simples_int(8)
+# # 18.5) lista5
+#  lista5 = lista_simples_int(8)
 
 # 18.6) lista6
- lista6 = lista_simples_int(8)
+lista6 = lista_simples_int(8)
 
 # 18.7) lista7
- lista7 = lista_simples_int(8)
+lista7 = lista_simples_int(8)
 
 # 18.8) lista8
- lista8 = lista_simples_int(8)
+lista8 = lista_simples_int(8)
 
 # 18.9) lista9
- lista9 = lista_simples_int(8)
+lista9 = lista_simples_int(8)
 
 # 18.10) lista10
- lista10 = lista_simples_int(8)
+lista10 = lista_simples_int(8)
 
 # 18.11) lista11
- lista11 = lista_simples_int(8)
+lista11 = lista_simples_int(8)
 
 # 18.12) lista12
- lista12 = lista_simples_int(8)
+lista12 = lista_simples_int(8)
 
 # 18.13) lista13
- lista13 = lista_simples_int(8)
+lista13 = lista_simples_int(8)
 
 # 18.14) lista14
- lista14 = lista_simples_int(8)
+lista14 = lista_simples_int(8)
 
 # 18.15) lista15
- lista15 = lista_simples_int(8)
+lista15 = lista_simples_int(8)
 
 # 18.16) lista16
- lista16 = lista_simples_int(8)
+lista16 = lista_simples_int(8)
 
 # 18.17) lista17
- lista17 = lista_simples_int(8)
+lista17 = lista_simples_int(8)
 
 # 18.18) lista18
- lista18 = lista_simples_int(8)
+lista18 = lista_simples_int(8)
 
 # 18.19) lista19
- lista19 = lista_simples_int(8)
+lista19 = lista_simples_int(8)
 
 
 
