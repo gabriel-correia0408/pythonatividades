@@ -37,12 +37,10 @@ print(f'O seu resulatado será de {total}')
 # 1.5) Qual o valor da soma de todas as listas e a soma total delas?
 # quero que mostre a soma individual (por lista) e a soma total de todas elas (soma das somas das listas)
 
-t1 = sum(lista1)
-t2 = sum(lista2)
-t3 = sum(lista3)
-print(f'A soma total da lista1 é de: {t1}' '\n' f'A soma total da lista2 é de: {t2}' '\n' f'A soma total da lista3 é de: {t3}')
-som = t1 + t2 + t3
-print(f'A soma total delas é de: {som}')
+lista_vt  = (lista1+lista2+lista3)
+print(f'O valor da soma da lista1 é de: {sum(lista1)}','\n'
+        f'O valor soma da lista2 é de: {sum(lista2)}', '\n'
+        f'O valor da soma da lista3 é de: {sum(lista3)}', '\n')
 
 
 
