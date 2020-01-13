@@ -19,9 +19,17 @@
 # 4 - Sempre que acontecer um embarque no avião, apresentar quem está no avião
 # 5 - Deve ser feito em Python
 from time import sleep
+def salvar_terminal():
+    arquivo = open('terminal.txt', 'w')
+    for linha in terminal:
+        linha = open('terminal.txt', 'w')
+        linha.write(f'{terminal}')
+    return terminal
+    arquivo.close()
 print('#'*10, 'HBSIS AIRLINES', '#'*10)
 aviao = []
 terminal = ['Piloto','Oficial 1','Oficial 2','Chefe de Voo','Comissaria 1','Comissaria 2','Policial','Presidiario']
+salvar_terminal()
 def status():
     sleep(2)
     print(f'\nSobraram no terminal os seguintes passageiros: {terminal}')
@@ -75,4 +83,21 @@ def solucao_exercicio():
     embarque_for_two('Piloto','Chefe de Voo')
     adic_aviao('Piloto')
     status()
+def salvar_aviao():
+    arquivo = open('aviao.txt', 'w')
+    arquivo.write(f'{aviao}')
+    return aviao
+    arquivo.close()
+def ler():
+    arquivo = open('terminal.txt', 'r')
+    for pessoa in arquivo:
+        pessoa = pessoa.strip
+        arquivo.write
+    # arquivo = open('aviao.txt', 'r')
+    # arquivo.close()
+
+
+
 solucao_exercicio()
+salvar_aviao()
+ler()
