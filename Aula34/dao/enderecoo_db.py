@@ -6,7 +6,7 @@ class Dados:
         #----- Salva o cursor da conexão em uma variável
         cursor = conexao.cursor()
         #----- Criação do comando SQL e passado para o cursor
-        comando_sql_select = "SELECT * FROM aulabd1.enderecoo"
+        comando_sql_select = "SELECT * FROM aulabd1.tabela_enderecoo"
         cursor.execute(comando_sql_select)
         #---- Pega todos os resultados da execução do comando SQL e armazena em uma variável
         resultado = cursor.fetchall()
