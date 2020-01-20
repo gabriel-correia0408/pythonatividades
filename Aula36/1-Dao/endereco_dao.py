@@ -1,45 +1,61 @@
 import MySQLdb
-from 2-Model.endereco import Endereco
+from Model.endereco import Endereco
 
 class EnderecoDao:
-    comexao = MySQLdb.connect(host= '',database='', user='', passwd='' )
-    cursor = conaxao.cursor()
+    conexao = MySQLdb.connect(host='mysql.topskills.study', database='topskills01', user='topskills01', passwd='ts2019')
+    cursor = conexao.cursor()
 
     def listar_todos(self):
-        comando = SELECT *FROM f"01_MDG_ENDERECO WHERE ID = {id}"
-        SELF.cursor.execute(comando)
+        comando = f"SELECT * FROM 01_MDG_ENDERECO"
+        self.cursor.execute(comando)
+        resultado = self.cursor.fetchall()
+        return resultado
+    
+    def buscar_por_id(self, id):
+        comando = f"SELECT * FROM 01_MDG_ENDERECO WHERE ID = {id}"
+        self.cursor.execute(comando)
         resultado = self.cursor.fetchone()
-        
+        return resultado
 
-    def buscar_por_id(self,id):
-                comando = SELECT *FROM f"01_MDG_ENDERECO WHERE ID = {id}"
-        SELF.cursor.execute(comando)
-        resultado = self.cursor.fetchone()
+    def salvar(self, endereco:Endereco):
+        comando = f""" INSERT INTO 01_MDG_ENDERECO
+        (
+            LOGRADOURO,
+            NUMERO,
+            COMPLEMENTO,
+            BAIRRO,
+            CIDADE,
+            CEP
+        )
+        VALUES
+        (
+            '{endereco.logradouro}',
+            '{endereco.numero}',
+            '{endereco.complemento}',
+            '{endereco.bairro}',
+            '{endereco.cidade}',
+            '{endereco.cep}'
+        )"""
+        self.cursor.execute(comando)
+        self.conexao.commit()
+        id_inserido = self.cursor.lastrowid
+        return id_inserido
 
-
-    def salvar(self,endereco:Endereco):
-         comando = """ INSERT INTO 01_MDG_PESSOA
-         (
-             NOME,
-             SOBRENOME,
-             IDADE,
-             ID_ENDERECO
-
-
-
-
-         )
-
-
-         """
- 
-
-    def alterar(self,endereco:Endereco):
-        comando = """
+    def alterar(self, endereco:Endereco):
+        comando = f""" UPDATE pessoa
+        SET
+            CIDADE = '{endereco.cidade}',
+            BAIRRO = '{endereco.bairro}',
+            RUA = '{endereco.logradouro}',
+            NUMERO = '{endereco.numero}',
+            COMPLEMENTO = '{endereco.complemento}',
+            CEP = '{endereco.cep}'
+        WHERE ID = {endereco.id}
         """
+        self.cursor.execute(comando)
+        self.conexao.commit()
 
-
-    def deletar(self,id):
-        COMANDO = F""" DELETE FROM 01_MSG_PESSOA WHERE ID = {id}
-        """
-
+    def deletar(self, id):
+        comando = f"DELETE FROM pessoa WHERE ID = {id}"
+        self.cursor.execute(comando)
+        self.conexao.commit()
