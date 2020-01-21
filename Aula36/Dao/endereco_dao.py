@@ -42,13 +42,13 @@ class EnderecoDao:
         return id_inserido
 
     def alterar(self, endereco:Endereco):
-        comando = f""" UPDATE pessoa
+        comando = f""" UPDATE 01_MDG_ENDERECO
         SET
-            CIDADE = '{endereco.cidade}',
-            BAIRRO = '{endereco.bairro}',
-            RUA = '{endereco.logradouro}',
+            LOGRADOURO = '{endereco.logradouro}',
             NUMERO = '{endereco.numero}',
             COMPLEMENTO = '{endereco.complemento}',
+            BAIRRO = '{endereco.bairro}',
+            CIDADE = '{endereco.cidade}',
             CEP = '{endereco.cep}'
         WHERE ID = {endereco.id}
         """
@@ -56,6 +56,6 @@ class EnderecoDao:
         self.conexao.commit()
 
     def deletar(self, id):
-        comando = f"DELETE FROM pessoa WHERE ID = {id}"
+        comando = f"DELETE FROM 01_MDG_ENDERECO WHERE ID = {id}"
         self.cursor.execute(comando)
         self.conexao.commit()
