@@ -65,3 +65,7 @@ def salvar():
 
 app.run(debug=True)
 
+
+# OFKGBÇORGHBOÇWRTNVBÇAORVNAERGQEKVN~MV
+
+
