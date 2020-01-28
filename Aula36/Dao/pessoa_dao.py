@@ -31,6 +31,7 @@ class PessoaDao:
             '{pessoa.sobrenome}',
             {pessoa.idade},
             {pessoa.endereco.id}
+
         )"""
         self.cursor.execute(comando)
         self.conexao.commit()
@@ -53,5 +54,3 @@ class PessoaDao:
         comando = f"DELETE FROM 01_MDG_PESSOA WHERE ID = {id}"
         self.cursor.execute(comando)
         self.conexao.commit()
-
-
