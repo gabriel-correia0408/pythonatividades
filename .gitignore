@@ -102,3 +102,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+/Aula41/teste_mvirtual/
