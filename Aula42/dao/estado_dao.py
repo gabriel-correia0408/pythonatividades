@@ -1,6 +1,8 @@
-import MySQLdb #importando o banco de dados "MySQLdb"
+#importando o banco de dados "MySQLdb"
+import MySQLdb
 
-from Aula42.estado_model import EstadoModel#importanta da pasta "Aula42" e do arqivo"estado_model" a classe"EstadoModel"
+#importanta da pasta "Aula42" e do arqivo"estado_model" a classe"EstadoModel"
+from Aula42.estado_model import EstadoModel
 #Criando a classe dao aonde ira conter os métodos
 class EstadoDao:
     # iniciando com  o construtar (__init__) ele é usado para inicializar o objeto para poder se criado a instancia
@@ -34,7 +36,7 @@ class EstadoDao:
         estado = self.cursor.fetchone()
         # criando a variavél "e" para poder receber,os valores do EstadoModel, e buscar eles por posição
         e = EstadoModel(estado[1], estado[2], estado[3], estado[0])
-        # um método do python que transfroma o valor em dicionário
+        # usand o return para retormar para o "e" em forma de dicionário através do __dict__ que é um método do python que transfroma o valor em dicionário
         return e.__dict__
 
     # criando método inserir.
