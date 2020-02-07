@@ -1,8 +1,7 @@
 # o resource serve para podermos fazer as quatro requisições http get put post delete
 from flask_restful import Resource
 # o request serve para fazer a requisão do json,para o código.
-from Flask import  request
-
+from flask import request
 
 
 # importando da minha pasta "Aula42", da sub-pasta "dao", e do arquivo "estado_dao", a classe "EstadoDao"

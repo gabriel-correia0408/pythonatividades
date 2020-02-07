@@ -1,5 +1,6 @@
-#importando o banco de dados "MySQLdb"
 import MySQLdb
+#importando o banco de dados "MySQLdb"
+
 
 #importanta da pasta "Aula42" e do arqivo"estado_model" a classe"EstadoModel"
 from Aula42.estado_model import EstadoModel
