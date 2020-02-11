@@ -3,7 +3,7 @@
 
 # Com base no seguinte dado bruto:
 
-dadobruto = '1;Arnaldo;23;m;alexcabeludo2@hotmail.com;014908648117'
+dadobruto = '1;Arnaldo;23;projeto;alexcabeludo2@hotmail.com;014908648117'
 
 # 2) A classe deve iniciar (__init__) guardando o dado bruto nume variável chamada self.dado_bruto
 # 3) As variáveis  código cliente (inteiro), nome, idade (inteiro), sexo, email, telefone

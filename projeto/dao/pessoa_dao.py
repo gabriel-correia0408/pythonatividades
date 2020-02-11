@@ -1,5 +1,5 @@
-from Aula55.dao.base_dao import BaseDao
-from Aula55.model.pessoa import Pessoa
+from projeto.dao.base_dao import BaseDao
+from projeto.model.pessoa import Pessoa
 
 class PessoaDao(BaseDao):
     def __init__(self):

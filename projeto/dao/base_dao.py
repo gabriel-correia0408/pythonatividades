@@ -16,6 +16,7 @@ class BaseDao:
             list.append(m.__dict__)
         return list
 
+
     def get_by_id(self, id):
         return self.session.query(self.table).filter_by(id=id).one()
 

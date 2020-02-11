@@ -41,7 +41,7 @@ def lista_simples_str(numero_objetos = int(random.randint(5,100))):
     Os caracteres podem ser minusculos ou maiusculos.
     '''
     lista_alfabetica = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 
-                        'h', 'i', 'j', 'k', 'l', 'm', 'n',
+                        'h', 'i', 'j', 'k', 'l', 'projeto', 'n',
                         'o', 'p', 'q', 'r', 's', 't', 'u',
                         'v', 'w', 'x', 'y', 'z']
     lista = []
@@ -63,7 +63,7 @@ def lista_simples_impura(numero_objetos = int(random.randint(5,100))):
     Os caracteres podem ser minusculos ou maiusculos.
     '''
     lista_alfabetica = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 
-                        'h', 'i', 'j', 'k', 'l', 'm', 'n',
+                        'h', 'i', 'j', 'k', 'l', 'projeto', 'n',
                         'o', 'p', 'q', 'r', 's', 't', 'u',
                         'v', 'w', 'x', 'y', 'z', '0', '1',
                         '2', '3', '4', '5', '6', '7', '8',

@@ -125,7 +125,7 @@ proc writesettings {} {
 	b $bellvol $bellpit $belldur \
 	c $kbdcli \
 	r $kbdrep \
-	m $mouseacc $mousethr \
+	projeto $mouseacc $mousethr \
 	s $screentim $screencyc \
 	s $screenbla
 }

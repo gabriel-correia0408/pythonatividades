@@ -39,7 +39,7 @@ for j in range(1, 10):
 
         attribute = soup.find_all("span", "attribute-value")
         # -- Altura
-        h = str(attribute[0]).strip(' m</span class="attribute-value">')
+        h = str(attribute[0]).strip(' projeto</span class="attribute-value">')
         list_attribute.append(h)
         # -- Peso
         h = str(attribute[1]).strip(' kg</span class="attribute-value">')

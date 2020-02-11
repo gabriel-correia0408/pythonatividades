@@ -50,14 +50,14 @@ pack .buttons.clear .buttons.add .buttons.search .buttons.delete \
 frame .menu -relief raised -borderwidth 1
 pack .menu -before .frame -side top -fill x
 
-menubutton .menu.file -text "File" -menu .menu.file.m -underline 0
-menu .menu.file.m
-.menu.file.m add command -label "Load ..." -command fileAction -underline 0
-.menu.file.m add command -label "Exit" -command {destroy .} -underline 0
+menubutton .menu.file -text "File" -menu .menu.file.projeto -underline 0
+menu .menu.file.projeto
+.menu.file.projeto add command -label "Load ..." -command fileAction -underline 0
+.menu.file.projeto add command -label "Exit" -command {destroy .} -underline 0
 pack .menu.file -side left
 
-menubutton .menu.help -text "Help" -menu .menu.help.m -underline 0
-menu .menu.help.m
+menubutton .menu.help -text "Help" -menu .menu.help.projeto -underline 0
+menu .menu.help.projeto
 pack .menu.help -side right
 
 proc deleteAction {} {
@@ -121,9 +121,9 @@ bind . <Control-s> "addAction; fillCard"
 .buttons.delete config -text "Delete...    Ctrl+D"
 bind . <Control-d> deleteAction
 
-.menu.file.m entryconfig 1 -accel Ctrl+F
+.menu.file.projeto entryconfig 1 -accel Ctrl+F
 bind . <Control-f> fileAction
-.menu.file.m entryconfig 2 -accel Ctrl+Q
+.menu.file.projeto entryconfig 2 -accel Ctrl+Q
 bind . <Control-q> {destroy .}
 
 focus .frame.entry1
@@ -159,10 +159,10 @@ bind Menu <<Help>> {Help [winfo containing %X %Y] %X %Y}
 
 set helpTopics(.menu.file) {This is the "file" menu.  It can be used to invoke some overall operations on the rolodex applications, such as loading a file or exiting.}
 
-set helpCmds(.menu.file.m) {getMenuTopic $topic $x $y}
-set helpTopics(.menu.file.m.1) {The "Load" entry in the "File" menu posts a dialog box that you can use to select a rolodex file}
-set helpTopics(.menu.file.m.2) {The "Exit" entry in the "File" menu causes the rolodex application to terminate}
-set helpCmds(.menu.file.m.none) {set topic ".menu.file"}
+set helpCmds(.menu.file.projeto) {getMenuTopic $topic $x $y}
+set helpTopics(.menu.file.projeto.1) {The "Load" entry in the "File" menu posts a dialog box that you can use to select a rolodex file}
+set helpTopics(.menu.file.projeto.2) {The "Exit" entry in the "File" menu causes the rolodex application to terminate}
+set helpCmds(.menu.file.projeto.none) {set topic ".menu.file"}
 
 set helpTopics(.frame.entry1) {In this field of the rolodex entry you should type the person's name}
 set helpTopics(.frame.entry2) {In this field of the rolodex entry you should type the first line of the person's address}
@@ -188,15 +188,15 @@ set helpTopics(version) "This is version $version."
 
 # Entries in "Help" menu
 
-.menu.help.m add command -label "On Context..." -command {Help context} \
+.menu.help.projeto add command -label "On Context..." -command {Help context} \
 	-underline 3
-.menu.help.m add command -label "On Help..." -command {Help help} \
+.menu.help.projeto add command -label "On Help..." -command {Help help} \
 	-underline 3
-.menu.help.m add command -label "On Window..." -command {Help window} \
+.menu.help.projeto add command -label "On Window..." -command {Help window} \
 	-underline 3
-.menu.help.m add command -label "On Keys..." -command {Help keys} \
+.menu.help.projeto add command -label "On Keys..." -command {Help keys} \
 	-underline 3
-.menu.help.m add command -label "On Version..." -command {Help version}  \
+.menu.help.projeto add command -label "On Version..." -command {Help version}  \
 	-underline 3
 
 # Local Variables:

@@ -9,7 +9,7 @@ class Cadastro:
             arquivo = open('23-Aula23/exercicios/resolucao/cadastro2.txt','r')
             for pessoa in arquivo:
                 pessoa = pessoa.strip().split(';')
-                # 1;Arnaldo;23;m;alexcabeludo2@hotmail.com;014908648117
+                # 1;Arnaldo;23;projeto;alexcabeludo2@hotmail.com;014908648117
                 dic = {'codigo':pessoa[0],'nome':pessoa[1],'idade':pessoa[2],
                     'sexo':pessoa[3],'email':pessoa[4],'telefone':pessoa[5]}
                 self.lista.append(dic)

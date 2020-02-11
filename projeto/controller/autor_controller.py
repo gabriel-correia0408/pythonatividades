@@ -1,7 +1,7 @@
 from flask import request
-from Aula55.controller.base_controller import BaseController
-from Aula55.dao.autor_dao import AutorDao
-from Aula55.model.autor import Autor
+from projeto.controller.base_controller import BaseController
+from projeto.dao.autor_dao import AutorDao
+from projeto.model.autor import Autor
 
 class AutorController(BaseController):
     def __init__(self):

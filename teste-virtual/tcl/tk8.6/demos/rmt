@@ -193,7 +193,7 @@ proc newApp appName {
 # of all the applications that currently exist.
 
 proc fillAppsMenu {} {
-    set m .menu.file.apps
+    set projeto .menu.file.apps
     catch {$m delete 0 last}
     foreach i [lsort [winfo interps]] {
 	$m add command -label $i -command [list newApp $i]

@@ -1,5 +1,5 @@
-from Aula55.dao.base_dao import BaseDao
-from Aula55.model.livro import Livro
+from projeto.dao.base_dao import BaseDao
+from projeto.model.livro import Livro
 
 class LivroDao(BaseDao):
     def __init__(self):
