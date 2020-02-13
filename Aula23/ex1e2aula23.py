@@ -32,7 +32,7 @@ class Cliente:#criando a classe
         self.email = None
         self.telefone  = None
 
-    def listar(self):#metodo litar
+    def listar(self):#metodo listar
 
         lista = self.dado_bruto.strip().split(';')#colocando os dados dentro de lista , e cortanto e fatiando com strip e split
         self.codigo = int(lista[0])#colocando minha varivél antes definida para receber, int , e sua posição dos dados que agr estão contidos em lista
