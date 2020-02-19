@@ -1,4 +1,4 @@
-class Pessoa:
+class Enderecoo:
     id = 0
     nome = ''
     sobrenome = ''

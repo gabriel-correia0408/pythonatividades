@@ -1,5 +1,7 @@
+contr=  EnderecoController()
+id_salvo = contr.salvar(end)
 import sys
-sys.path.append('/Users/mdgranemann/Documents/Github/AlunosPython/TrabalhosPython/36-Aula036')
+sys.path.append('C:/Users/900137/Desktop/pythonatividades/pythonatividades/Aula037')
 from Controller.pessoa_controller import PessoaController
 from Model.pessoa import Pessoa
 

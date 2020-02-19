@@ -35,7 +35,9 @@ def excluir():
     id = int(request.args['id'])
     id_end = request.args['id_end']
     pessoa_controller.deletar(id)
-
+    if id_end != 'None':
+        end_controller.deletar(id_end)
+    return redirect('/listar')
 
 @app.route('/salvar')
 def salvar():
@@ -63,4 +65,7 @@ def salvar():
 
 app.run(debug=True)
 
-# fnvsfjnbçfjbjbdfvj
+
+# OFKGBÇORGHBOÇWRTNVBÇAORVNAERGQEKVN~MV
+
+
