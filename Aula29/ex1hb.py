@@ -98,6 +98,7 @@ def ler():
 
 
 
+
 solucao_exercicio()
 salvar_aviao()
 ler()

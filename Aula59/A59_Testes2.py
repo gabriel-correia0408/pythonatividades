@@ -24,6 +24,17 @@ class Calc:
         self.__resultado = self.__n1 + self.__n2
         return self.__resultado
 
+    def subtracao(self):
+        self.__resultado = self.__n1 - self.__n2
+        return  self.__resultado
+
+    def multiplicacao(self):
+        self.__resultado = self.__n1 * self.__n2
+        return self.__resultado
+
+
+
+
 
 c = Calc(10,20)
 assert isinstance(c, Calc)
