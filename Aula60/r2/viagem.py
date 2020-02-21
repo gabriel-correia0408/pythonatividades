@@ -4,7 +4,7 @@ from Aula60.ForTwo.r2.desembarque import desembarque
 terminal = {'descricao':'terminal', 'pessoas': ['piloto','oficial1','oficial2','chefe de serviço','comissário1','comissário2','policial','presidiario']}
 aviao = { 'descricao':'aviao', 'pessoas': [] }
 
-def viagem(motorista:str, passageiro:str, saida:dict, chegada:dict):
+def Viagem(motorista:str, passageiro:str, saida:dict, chegada:dict):
     fortwo = embarque(motorista, passageiro, saida)
     print(f"Saindo do {saida['descricao']}")
     print('Iniciando a viagem...')
