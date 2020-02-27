@@ -3,7 +3,7 @@ class Bin:
     def receber_dado_inteiro(self):
         while True:
             try:
-                self.numero = int(input("Digite um número inteiro e positivo: "))
+                self.numero = int(input("Digite um número inteiro e positivo:"))
                 break
             except ValueError:
                 print("Digite um número decimal, inteiro e positivo: ")
@@ -32,6 +32,13 @@ class Bin:
                 pass
         return print(f'O total de zeros que tem o numero {self.binario} é {self.contador}')
 
+    def fatiar(self):
+        self.separar = self.juntar.split('1')
+        # print(self.separar)
+        self.tamanho = (len(max(self.separar)))
+        print(f"O maior intervalo de zeros do número {self.binario} é {self.tamanho}")
+
+
 
 b = Bin()
 b.receber_dado_inteiro()
@@ -39,3 +46,4 @@ b.tratar_para_binario_receber_na_lista()
 # print(b.tratar_para_binario_receber_na_lista())
 b.reverter_paraeliminar_os_zeros()
 b.contar_os_zeros()
+b.fatiar()
